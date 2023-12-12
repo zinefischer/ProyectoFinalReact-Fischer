@@ -1,0 +1,42 @@
+.counter {
+    display: flex;
+    flex-direction: column;
+}
+
+.counter-conteiner {
+    display: flex;
+    flex-direction: row;
+}
+
+.counter-button {
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.counter-button:active {
+    background-color: rgb(195, 195, 195);
+}
+
+.counter-number {
+    padding: 1rem;
+    margin: 1rem;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cart-add {
+    padding: 1rem;
+    margin: 1rem;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 1rem;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.cart-add:active {
+    background-color: rgb(195, 195, 195);
+}

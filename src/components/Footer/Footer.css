@@ -1,0 +1,13 @@
+.footer {
+    background-color: black;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.footer-text {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

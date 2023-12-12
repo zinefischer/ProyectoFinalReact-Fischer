@@ -1,0 +1,46 @@
+.header {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    background-color: black;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 15vh;
+}
+
+.brand {
+    color: white;
+    margin: 2rem;
+    font-size: 3rem;
+}
+
+.brand-link {
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+}
+
+.link {
+    font-size: 1.3rem;
+    text-decoration: none;
+    padding: .7rem;
+    margin: 1rem;
+    border-bottom: 2px solid transparent;
+    color: white;
+}
+
+.link:hover {
+    border-bottom: 2px solid white;
+}
+
+.link:active {
+    border-bottom: 2px solid grey;
+}
+
+.cart-widget {
+    color: white;
+    margin: 5rem;
+}

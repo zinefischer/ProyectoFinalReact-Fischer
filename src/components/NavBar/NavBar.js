@@ -1,39 +1,27 @@
-import CartWidget from "./CartWidget";
+import CartWidget from "../CartWidget/CartWidget";
+import { Link, NavLink } from "react-router-dom";
 
-import { TbPlayFootball } from "react-icons/tb"
+import "./NavBar.css"
 
-function NavBar() {
+function NavBar(categoryId) {
 
     return (
-
-        <section className="conteiner hero is-black">
-            <div className="columns hero-body">
-
-                <div className="column is-4">
-                    <brand className="title">FANATICO FUTBOLERO <TbPlayFootball size="1.5rem" /></brand>
-                </div>
-
-                <div className="column is-7">
-                    <nav>
-                        <ul className="columns">
-                            <li className="column is-2">
-                                <a className="button is-fullwidth is-white is-outlined" href="www.google.com">Bienvenidos</a>
-                            </li>
-                            <li className="column is-2">
-                                <a className="button is-fullwidth is-white is-outlined" href="www.google.com">Catalogo</a>
-                            </li>
-                            <li className="column is-2">
-                                <a className="button is-fullwidth is-white is-outlined" href="www.google.com">Contacto</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-
-                <div className="column is-1">
-                    <CartWidget />
-                </div>
-            </div>
-        </section>
+        <div className="header">
+            <Link className="brand-link" to="/">
+                <h1 className="brand">ReVe</h1>
+            </Link>
+            <nav className="navbar">
+                {/* <Link className="link" to={`/${categoryId}`}>Shoes</Link>
+                <Link className="link" to={`/${categoryId}`}>Hoodies</Link>
+                <Link className="link" to={`/${categoryId}`}>Caps</Link> */}
+                <NavLink className="link" to={"/category/shoes"}>Shoes</NavLink>
+                <NavLink className="link" to={"/category/hoodies"}>Hoodies</NavLink>
+                <NavLink className="link" to={"/category/caps"}>Caps</NavLink>
+            </nav>
+            <figure className="cart-widget" >
+                <CartWidget />
+            </figure>
+        </div>
     )
 }
 

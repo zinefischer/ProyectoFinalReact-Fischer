@@ -4,10 +4,10 @@ function CartWidget() {
 
     return (
 
-        <icon>
+        <div>
             <PiShoppingCartLight size="2rem" />
             <span>7</span>
-        </icon>
+        </div>
     )
 }
 

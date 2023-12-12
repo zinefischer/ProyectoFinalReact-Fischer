@@ -1,0 +1,19 @@
+.detail-conteiner {
+    min-height: calc(100vh - 6vh - 15vh);
+}
+
+.button-back {
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 3rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    background-color: grey;
+    margin: 2rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

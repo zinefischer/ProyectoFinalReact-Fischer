@@ -1,0 +1,70 @@
+.item-container {
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.item-card {
+    border: 2px solid transparent;
+    border-radius: 2rem;
+}
+
+.item-image {
+    max-width: 100%;
+    border-radius: 1rem;
+}
+
+.item-details {
+    background-color: #b0b0b0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -1.7rem;
+    border-radius: 1rem;
+    padding: .4rem;
+    max-width: 100%;
+}
+
+.item-name {
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    margin: .2rem;
+}
+
+.item-price {
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    margin: .2rem;
+}
+
+.item-stock {
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    margin: .2rem;
+}
+
+.item-details-button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    text-align: center;
+    background-color: #5d5d5d;
+    color: #ffff;
+    margin: .3rem;
+    border: 2px solid grey;
+    padding: .5rem;
+    border-radius: 1rem;
+    width: 10rem;
+    transition: background-color .3s, color .3s;
+}
+
+.item-details-button:hover {
+    background-color: grey;
+}

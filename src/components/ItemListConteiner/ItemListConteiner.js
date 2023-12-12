@@ -1,17 +1,36 @@
-function ItemListConteiner() {
+import { useEffect, useState } from "react";
+import { getProducts, getProductsByCategory } from "../../asyncMock";
+
+import ItemList from "../ItemList/ItemList";
+import { useParams } from "react-router-dom";
+
+import "./ItemListConteiner.css"
+
+function ItemListConteiner({ greeting }) {
+
+    const [products, setProducts] = useState([]);
+
+    const { categoryId } = useParams()
+
+    useEffect(() => {
+        const asyncFunc = categoryId ? getProductsByCategory : getProducts
+
+        asyncFunc(categoryId)
+            .then(response => {
+                setProducts(response)
+            })
+            .catch(error => {
+                console.error(error)
+            })
+    }, [categoryId])
 
     return (
 
-        <div className="columns">
-            <div className="column is-offset-4 is-half">
-                <h1 className="title">BIENVENIDOS A FANATICO FUTBOLERO</h1>
-            </div>
+        <div className="item-list-conteiner">
+            <h1>{greeting}</h1>
+            <ItemList products={products} />
         </div>
-
-
     )
-
-
 }
 
 export default ItemListConteiner;
