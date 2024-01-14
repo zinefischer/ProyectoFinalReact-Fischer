@@ -11,9 +11,10 @@
 .counter-button {
     padding: 1rem;
     margin: 1rem;
-    border-radius: 1rem;
+    border-radius: .5rem;
     border: 1px solid black;
     cursor: pointer;
+    font-size: 1rem;
 }
 
 .counter-button:active {
@@ -32,9 +33,11 @@
     margin: 1rem;
     color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border-radius: 1rem;
+    font-size: 1rem;
+    border-radius: .5rem;
     border: 1px solid black;
     cursor: pointer;
+    background-color: white;
 }
 
 .cart-add:active {

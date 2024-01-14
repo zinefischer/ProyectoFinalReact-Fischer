@@ -42,7 +42,7 @@ const products = [
         category: 'hoodies',
         img: 'https://f.fcdn.app/imgs/0129ae/www.zooko.com.uy/zoo/ecbe/webp/catalogo/NKDM5630-010-1/460x460/buzo-nike-revival-flc-crew-black.jpg',
         stock: 15,
-        description: 'Nike Revival FLC Crew Hoodie - Black',
+        description: '  ',
     },
     {
         id: '6',

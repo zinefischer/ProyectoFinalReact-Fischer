@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 
 import "./NavBar.css"
 
-function NavBar(categoryId) {
+function NavBar() {
 
     return (
         <div className="header">
@@ -11,9 +11,6 @@ function NavBar(categoryId) {
                 <h1 className="brand">ReVe</h1>
             </Link>
             <nav className="navbar">
-                {/* <Link className="link" to={`/${categoryId}`}>Shoes</Link>
-                <Link className="link" to={`/${categoryId}`}>Hoodies</Link>
-                <Link className="link" to={`/${categoryId}`}>Caps</Link> */}
                 <NavLink className="link" to={"/category/shoes"}>Shoes</NavLink>
                 <NavLink className="link" to={"/category/hoodies"}>Hoodies</NavLink>
                 <NavLink className="link" to={"/category/caps"}>Caps</NavLink>
